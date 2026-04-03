@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+	<application android:allowBackup="true" android:icon="@mipmap/appicon" android:roundIcon="@mipmap/appicon_round" android:supportsRtl="true"></application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+
+  <!-- READ ACCOUNTS PERMISSION   -->
+  <uses-permission
+      android:name="android.permission.AUTHENTICATE_ACCOUNTS"
+      android:maxSdkVersion="22" />
+  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+  <uses-permission
+      android:name="android.permission.USE_CREDENTIALS"
+      android:maxSdkVersion="22" />
+  <uses-permission android:name="cu.uci.android.apklis.READ_ACCOUNT_DATA" />
+
+  <!-- SHOW DIALOG OVERLAY PERMISSION   -->
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+  <!-- ACCESS INTERNET PERMISSION   -->
+  <uses-permission android:name="android.permission.INTERNET" />
+
+  <!-- Prevent app from being killed in background -->
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+  <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+  <!-- For Android 12+ background activity launches -->
+  <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+  <!-- Network state permissions for better connection handling -->
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+</manifest>
